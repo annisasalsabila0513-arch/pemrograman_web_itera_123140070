@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini POS Kasir Kantin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Kasir Kantin</h1>
+      <p>Catat belanja, hitung diskon, dan kembalian dalam satu layar.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="judul-form">
+      <h2 id="judul-form">Tambah barang</h2>
+      <form id="form-barang" novalidate>
+        <div class="field">
+          <label for="nama">Nama barang</label>
+          <input id="nama" type="text" placeholder="Contoh: Buku Tulis" autocomplete="off">
+          <p class="error" id="err-nama" role="alert"></p>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="harga">Harga satuan (Rp)</label>
+            <input id="harga" type="number" placeholder="Contoh: 3500" inputmode="numeric">
+            <p class="error" id="err-harga" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="qty">Jumlah</label>
+            <input id="qty" type="number" placeholder="Contoh: 2" inputmode="numeric">
+            <p class="error" id="err-qty" role="alert"></p>
+          </div>
+        </div>
+        <button type="submit" class="btn primary">Tambah ke keranjang</button>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="judul-keranjang">
+      <h2 id="judul-keranjang">Keranjang belanja</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>No</th><th>Nama Barang</th><th class="num">Harga Satuan</th><th class="num">Qty</th><th class="num">Subtotal</th><th>Aksi</th></tr>
+          </thead>
+          <tbody id="tabel-keranjang"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="judul-bayar">
+      <h2 id="judul-bayar">Pembayaran</h2>
+      <dl class="ringkasan">
+        <div><dt>Total belanja</dt><dd id="total">Rp 0</dd></div>
+        <div><dt>Diskon</dt><dd id="diskon">Rp 0</dd></div>
+        <div class="akhir"><dt>Total akhir</dt><dd id="total-akhir">Rp 0</dd></div>
+      </dl>
+      <p class="info" id="info-diskon"></p>
+      <div class="field">
+        <label for="bayar">Uang bayar (Rp)</label>
+        <input id="bayar" type="number" placeholder="Masukkan uang diterima" inputmode="numeric">
+      </div>
+      <p class="kembalian" id="kembalian" aria-live="polite"></p>
+      <button type="button" id="btn-reset" class="btn">Transaksi baru</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
