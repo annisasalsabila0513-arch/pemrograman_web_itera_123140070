@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--ink);
+  color: #fff;
+}
+.navbar__brand { font-family: var(--serif); font-size: 1.35rem; }
+.navbar nav { display: flex; gap: 1.25rem; }
+.navbar a { color: #c9d2de; text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+.navbar a:hover { color: #fff; }
+.navbar a.active { color: #fff; border-bottom-color: #fff; }
+.navbar a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }

@@ -1,0 +1,9 @@
+.book-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.book-list__empty {
+  margin: 0;
+  padding: 1.5rem;
+  border: 1.5px dashed var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  text-align: center;
+}

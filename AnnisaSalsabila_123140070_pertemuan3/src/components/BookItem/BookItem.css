@@ -1,0 +1,24 @@
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 8px solid var(--line);
+  border-radius: 6px;
+}
+.book-item--milik { border-left-color: var(--milik); }
+.book-item--baca { border-left-color: var(--baca); }
+.book-item--beli { border-left-color: var(--beli); }
+.book-item__title { margin: 0; font-family: var(--serif); font-size: 1.15rem; }
+.book-item__author { margin: 0.15rem 0 0.5rem; color: var(--muted); }
+.book-item__actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+.badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: #fff; }
+.badge--milik { background: var(--milik); }
+.badge--baca { background: var(--baca-dark); }
+.badge--beli { background: var(--beli); }
+@media (max-width: 520px) {
+  .book-item { flex-direction: column; align-items: flex-start; }
+}
