@@ -1,9 +1,9 @@
 # Pertemuan 5 - Python OOP
 
 ## Identitas Mahasiswa
-- **Nama Lengkap**   : [ISI NAMA LENGKAP]
-- **NIM**            : [ISI NIM]
-- **Kelas Praktikum**: [ISI KELAS: RA / RB]
+- **Nama Lengkap**   : Annisa Salsabila
+- **NIM**            : 123140070
+- **Kelas Praktikum**: RA
 
 ## Deskripsi Program
 Program ini adalah **Sistem Manajemen Perpustakaan Sederhana** (folder `tugas_perpustakaan/`).
@@ -23,4 +23,4 @@ python main.py
 ```
 
 ## Screenshot Output
-[TEMPEL SCREENSHOT TERMINAL DI SINI: penambahan item, pencarian, dan penampilan katalog]
+![alt text](image.png)
